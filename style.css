@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.cabecera{
+    width: 100%;
+    display: flex;
+    
+   /*  padding: 5px 10%; */
+    font-family: 'Playfair Display', serif;
+    background-image: url(img/fderr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    cursor: pointer;
+    margin-right: 700px;
+}
+.logo img{
+    height: 70px;
+    margin-top: 10px;
+}
+nav{
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    position: relative;
+}
+
+.nav_link{
+    list-style: none;
+}
+.nav_link li{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.nav_link li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #e7e5e2;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+}
+
+.nav_link li a:hover{/* cambia el color de las letras al pasar el cursor */
+    color: #050505;
+    
+}
+
+/* .cta{
+    color: #fff;
+    background: #000;
+    padding: 9px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700;
+    height: 60px;
+    text-align: center;
+    font-size: 2rem;
+} */
+
+.animation-container {
+    position: absolute; /* Coloca la animación sobre el header */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho del header */
+    height: 100px; /* Altura de la animación */
+    overflow: hidden;
+    z-index: 2; /* Z-index mayor que el nav */
+}
+
+.moving-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2rem;
+    white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+    animation: moveText 15s linear infinite; /* Ajusta la duración según tus preferencias */
+    color: azure;
+    font-family: 'DM Serif Display', serif;
+    background: rgba(49, 44, 37, 0.671); 
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.contain{
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.caja{
+    margin-top: 20px;
+    width: 70%;
+    height: 70vh;
+    background-color: rgb(204, 192, 192) ;
+    margin: 10px;
+    text-align: center;
+    /* line-height: 100px; */ /* Centra el texto verticalmente */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    font-size: 15px;
+}
+.img{
+    width: 90%;
+    height: 40vh;
+    margin-top: 50px;
+}
+
+
+.caja:hover, .caja.seleccionada{
+    transform: scale(1.1); /* Escala la caja al 110% cuando se hace hover */
+}
+
+
+.flecha {
+    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+}
+
+.izquierda {
+    left: 10px; /* Ajusta según sea necesario */
+}
+
+.derecha {
+    right: 10px; /* Ajusta según sea necesario */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav>
+            <div class="logo"><img src="img/derecho.png" alt="logo"></div>
+          <ul class="nav_link">
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Fachada</a></li>
+            <li><a href="#">Ubicacion</a></li>
+          </ul>
+        </nav>
+        <div class="animation-container">
+            <div class="moving-text">
+                <p>
+                    El 27 de junio de 1959, la Asamblea Universitaria de la Universidad Nacional del Litoral aprobó la creación de la Escuela de Derecho dependiente de la Facultad de Ciencias Económicas, Comerciales y Políticas, con asiento en Rosario.
+                </p>
+            </div>
+        <!-- <a href="#" class="cta">Contact</a> -->
+       </header>
+       
+    
+      <div class="contain">
+        <div class="flecha izquierda" onclick="moveCajas(-1)">&#9664;</div>
+            <div class=" caja caja1" id="caja1">El edificio
+                Proyectado y construido por el arq. Inglés Herbert Boyd Walker en 1892. <img class= "img"src="img/arq2.jpg" alt=""></div>
+            <div class="caja caja2" id="caja2">Una frase, citada en el folleto que se publicara en 1962 impulsando la conversión de la Escuela de Derecho en Facultad y resume nuestra historia y los ideales de nuestros fundadores muy brevemente: «Por que tú eres libre para alcanzar tus sueños».<img class="img" src="img/fderarq.jpg" alt="."></div>
+            <div class="caja caja3" id="caja3">Arquitectura de la facultad <img src="img/arqjpg.jpg" alt="arquitecturaFacultad" class="img"></div>
+            <div class="caja caja4" id="caja4">La Universidad Nacional de Rosario se creó por ley 17.987 del 29 de noviembre de 1968. La fecha de constitución oficial es la del 16 de diciembre del mismo año.<img class= "img"src="img/fderarq2.jpg" alt=""></div>
+            <!-- <div class="caja caja5" id="caja5">caja 5</div>
+            <div class="caja caja6" id="caja6">caja 6</div> -->
+            <div class="flecha derecha" onclick="moveCajas(1)">&#9654;</div>
+      <script src="main.js"></script>
+</body>
+</html>
